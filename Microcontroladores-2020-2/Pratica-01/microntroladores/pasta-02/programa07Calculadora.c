@@ -55,8 +55,8 @@ void realizarCoss(){
   printf("COSS!\n");
   printf("Informe um angulo: ");
   scanf("%f",&angulo);
-  coss =  sin (angulo*PI/180);
-  printf(" Resultado do seno: %.3f \n", coss);
+  coss =  cos (angulo*PI/180);
+  printf(" Resultado do cosseno: %.3f \n", coss);
 }
 
 int main(void) {
