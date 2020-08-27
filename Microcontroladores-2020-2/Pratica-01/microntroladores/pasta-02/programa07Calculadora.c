@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <math.h>
+
 
 void realizarSoma(){
   float valor1,valor2,resultado; 
@@ -38,21 +40,31 @@ void realizarDivisao(){
 }
 
 void realizarSeno(){
-  float catetoOp,hipotenuza,seno,angulo;
+  float angulo,seno;
+  float PI = (3.141592654);
   printf("SEN!\n");
-  printf("Informe o cateto oposto e a hipotenuza: ");
-  scanf("%f%f",&catetoOp,&hipotenuza);
-  seno =  catetoOp / hipotenuza;
-  angulo = 1 / seno;
+  printf("Informe um angulo: ");
+  scanf("%f",&angulo);
+  seno =  sin (angulo*PI/180);
   printf(" Resultado do seno: %.3f \n", seno);
-  printf(" Angulo : %.3f \n", angulo);
+}
 
+void realizarCoss(){
+  float angulo,coss;
+  float PI = (3.141592654);
+  printf("COSS!\n");
+  printf("Informe um angulo: ");
+  scanf("%f",&angulo);
+  coss =  sin (angulo*PI/180);
+  printf(" Resultado do seno: %.3f \n", coss);
 }
 
 int main(void) {
 
   int operacao;
   int ligado = 1;
+
+printf(" Selecione a opçao de calculo: \n soma(1) \n subtracao(2) \n multiplicacao(3) \n divisao(4) \n seno(5) \n cosseno(6) \n ");
 
   while(ligado == 1){
 
@@ -77,14 +89,14 @@ int main(void) {
     realizarSeno(); break;
 
     case 6:
-    printf(" coss \n ");
+    realizarCoss(); break;
 
     case 0:
     ligado = 0;
     break;
 
     default:
-    printf(" operacao invalida! \n");
+    printf(" Operacao invalida! \n");
 
   }
 }
