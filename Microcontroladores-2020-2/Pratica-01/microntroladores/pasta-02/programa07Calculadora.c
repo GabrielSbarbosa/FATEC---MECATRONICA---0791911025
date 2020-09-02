@@ -26,7 +26,7 @@ void realizarMultiplicacao(){
   printf("Informe 2 operandos: ");
   scanf("%f%f",&valor1,&valor2);
   resultado = valor1 * valor2; 
-  printf(" Resultado: %.3f \n", resultado);
+  printf(" Resultado: %.1f \n", resultado);
 }
 
 void realizarDivisao(){
@@ -34,9 +34,13 @@ void realizarDivisao(){
   printf("DIVISAO!\n");
   printf("Informe 2 operandos: ");
   scanf("%f%f",&valor1,&valor2);
-  resultado = valor1 / valor2; 
-  printf(" Resultado: %.3f \n", resultado);
 
+  if( valor2 != 0){
+    resultado = valor1 / valor2; 
+    printf(" Resultado: %.3f \n", resultado);
+  } else {
+    printf(" ERRO: não pode dividir por 0. \n");
+  }
 }
 
 void realizarSeno(){
@@ -64,7 +68,7 @@ int main(void) {
   int operacao;
   int ligado = 1;
 
-printf(" Selecione a opçao de calculo: \n soma(1) \n subtracao(2) \n multiplicacao(3) \n divisao(4) \n seno(5) \n cosseno(6) \n ");
+printf(" Selecione a opçao de calculo: \n Soma(1) \n Subtracao(2) \n Multiplicacao(3) \n Divisao(4) \n Seno(5) \n Cosseno(6) \n Sair(0) \n ");
 
   while(ligado == 1){
 
@@ -92,8 +96,7 @@ printf(" Selecione a opçao de calculo: \n soma(1) \n subtracao(2) \n multiplica
     realizarCoss(); break;
 
     case 0:
-    ligado = 0;
-    break;
+    ligado = 0; break;
 
     default:
     printf(" Operacao invalida! \n");
