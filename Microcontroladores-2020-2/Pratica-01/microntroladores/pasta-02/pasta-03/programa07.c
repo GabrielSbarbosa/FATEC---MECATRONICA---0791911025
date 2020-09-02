@@ -23,6 +23,13 @@ float media = soma / i;
 
 printf("Media dos valores: %f\n", media);
 
-
+for(i = 0; i < 3; i++){
+if( temperaturas[i] < media )
+printf("%f eh menor que a media\n", temperaturas[i]);
+else if ( temperaturas[i] > media ){
+printf("%f eh maior que a media\n", temperaturas[i]);
+} else
+printf("%f eh igual a media\n", temperaturas[i]);
+}
 return 0;
 }
