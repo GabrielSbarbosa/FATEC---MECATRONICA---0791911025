@@ -1,27 +1,9 @@
-void setup()
-
- {
-
- pinMode(13, OUTPUT);
-
- Serial.begin(9600);
-
- }
+#include <stdio.h>
 
 
-
-void loop()
-
- {
-
- char dado = Serial.read();
-
- if (dado == 'a')
-
- digitalWrite(13, HIGH);
-
- else if(dado == 'b')
-
- digitalWrite(13, LOW);
-
- }
+int main(void) {
+//Apenas na declaração
+char msg[10] = "ola mundo";
+printf("%s\n", msg);
+return 0;
+}
