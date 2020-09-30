@@ -4,6 +4,8 @@
 
 */
 
+// ao digitar LED1:1 no serial ele liga o 1 led, mas aperte o ! depois q terminar, ao digitar LED1:0 mais o ! ele desliga o led 1 //
+
 
 
 #include <math.h>
