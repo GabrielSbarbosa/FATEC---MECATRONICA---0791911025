@@ -1,4 +1,4 @@
-// Exercicio de tratamento de imagens em Python, utilizando o google colab //
+## Exercicio de tratamento de imagens em Python, utilizando o google colab ##
 
 ## Faça um programa de tratamento de imagem, usando a detecção por Canny, redesenhar o contorno na imagem original.
 
