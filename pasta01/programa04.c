@@ -16,7 +16,6 @@ scanf(" %c", &letra);
 printf("Valor Real: %f \n", numero_real);
 printf("Valor inteiro: %d \n", numero_inteiro);
 printf("Letra: %c \n", letra);
-printf("Palmeiras não tem mundial! \n");
 
  return 0;
 }
